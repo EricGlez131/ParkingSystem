@@ -20,6 +20,10 @@ public class ParkingGarage {
         totalCapacity--;
     }
 
+    public void increaseCapacity(){
+        totalCapacity++;
+    }
+
 
     public void add(Vehicle vehicle) {
         vehiclesList.add(vehicle);

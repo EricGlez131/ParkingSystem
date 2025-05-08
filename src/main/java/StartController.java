@@ -30,6 +30,7 @@ public class StartController {
         alert.setContentText("Please place your " + vehicle.getLicense() + " In the parking spot, Thank You");
         alert.showAndWait();
 
+        parkingGarage.lowerCapacity();
         resetStartGUI();
 
     }

@@ -55,8 +55,9 @@ public class PaymentController {
             printReceipt(match, totalOwed);
 
             parkingGarage.getVehiclesList().remove(match);
-            System.out.println("The vehicle" + match.getLicense() + " has been deleted from the Parking Garage reference" +
+            System.out.println("The vehicle " + match.getLicense() + " has been deleted from the Parking Garage reference " +
                     "once this piece of code is done the match reference will be cleared by garbage collection");
+            parkingGarage.increaseCapacity();
         }
 
 
