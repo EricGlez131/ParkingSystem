@@ -11,7 +11,9 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <TextField promptText="Enter you license plate" fx:id="promptField"/>
+
+    <TextField promptText="Enter you license plate" fx:id="promptText"/>
+    <Button text="Pay" onAction="#handlePayment"/>
 
     <Button text="Back" onAction="#Back"/>
 

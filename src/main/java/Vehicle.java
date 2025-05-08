@@ -27,4 +27,26 @@ public class Vehicle {
     public String getLicense() {
         return licensePlate;
     }
+
+    public String getTimeAsString(){
+        double totalTime = Instant.now().toEpochMilli() - entryTime.toEpochMilli();
+        String time = "You entry time was" +  entryTime.toString() + "the Current Time is " + Instant.now();
+        return time;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public String getColor() {
+        return Color;
+    }
+
+    public String getYear() {
+        return year + "";
+    }
 }

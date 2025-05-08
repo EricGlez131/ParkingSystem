@@ -5,6 +5,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -12,7 +13,7 @@ import java.util.List;
 
 public class DisplayCarsController {
 
-    public Label stringLabel;
+    public TextArea stringLabel;
 
     @FXML
     public void initialize() {
@@ -22,6 +23,7 @@ public class DisplayCarsController {
         if (parkingGarage.getTotalCapacity() < 60) {
             for (Vehicle vehicle : vehicleList) {
                 stringToDisplay.append(vehicle.getLicense());
+                stringToDisplay.append("\n");
             }
             stringLabel.setText(stringToDisplay.toString());
         }
